@@ -26,5 +26,8 @@ tasks {
 dependencies {
     api("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     api("org.jetbrains.kotlin:kotlin-reflect")
+
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.2.0")
+    testRuntime("org.junit.jupiter:junit-jupiter-engine:5.2.0")
 }
 

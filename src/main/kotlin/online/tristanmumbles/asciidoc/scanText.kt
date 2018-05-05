@@ -15,9 +15,8 @@ fun scanText(text: String): List<Line> {
         // TODO: Not totally sure if we want "newline" fanciness or not, documents can get awful dirty
         if (ch == '\n') {
             val charStart = lastLine?.let { it.charEnd + 1 } ?: 0
-            val charEnd = index
-            val content = text.substring(charStart, charEnd)
-            val line = Line(content, lineIndex, charStart, charEnd)
+            val content = text.substring(charStart, index)
+            val line = Line(content, lineIndex, charStart, index)
 
             lines.add(line)
             lineIndex++
