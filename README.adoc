@@ -1,0 +1,13 @@
+= asciidoc-kt
+Tristan Juricek <mr.tristan@gmail.com>
+
+An asciidoc parser alternative, in Kotlin, for easy document manipulation.
+
+
+== To Do
+
+* `fun findHeader(lines): Header?`
+* `fun findPreamble(lines): Preamble?`
+* `fun findNextSection(lines): Section?`
+* `fun parseDocument(lines): (Header?, Preamble?, List<Section>)`
+
