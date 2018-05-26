@@ -49,7 +49,9 @@ data class AuthorInfo(val firstName: String, val middleName: String?, val lastNa
  */
 data class RevisionInfo(val number: String?, val date: LocalDate?, val remark: String?, val lines: List<Line>)
 
+data class Title(val content: String, val level: Int, val lines: List<Line>)
+
 /**
  *
  */
-data class Header(val title: String, val authorInfos: List<AuthorInfo>?, val revisionInfo: RevisionInfo?, val attributes: List<Attribute>, val lines: List<String>)
+data class Header(val title: Title, val authorInfos: List<AuthorInfo>?, val revisionInfo: RevisionInfo?, val attributes: List<Attribute>, val lines: List<String>)
