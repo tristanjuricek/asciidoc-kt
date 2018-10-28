@@ -20,6 +20,19 @@ class TestScanText {
     }
 
     @Test
+    fun `three lines, middle empty`() {
+        val allContent = "one\n\ntwo\n"
+
+        val actual = scanText(allContent)
+
+        val expected = listOf(Line("one", 0, 0, "one".length),
+                Line("", 1, "one".length + 1, "one".length + 1),
+                Line("two", 2, "one".length + 2, allContent.length - 1))
+
+        Assertions.assertEquals(expected, actual)
+    }
+
+    @Test
     fun `two lines, no EOL`() {
         val allContent = "one\ntwo"
 
