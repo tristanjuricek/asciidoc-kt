@@ -3,7 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     `java-library`
-    id("org.jetbrains.kotlin.jvm") version "1.2.31"
+    id("org.jetbrains.kotlin.jvm") version "1.2.71"
 }
 
 group = "online.tristanmumbles.asciidoc"
