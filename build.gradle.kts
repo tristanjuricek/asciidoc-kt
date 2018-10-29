@@ -3,7 +3,8 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     `java-library`
-    id("org.jetbrains.kotlin.jvm") version "1.2.31"
+    id("org.jetbrains.kotlin.jvm") version "1.2.71"
+    antlr
 }
 
 group = "online.tristanmumbles.asciidoc"
@@ -24,6 +25,8 @@ tasks {
 }
 
 dependencies {
+    antlr("org.antlr:antlr4:4.5")
+
     api("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     api("org.jetbrains.kotlin:kotlin-reflect")
 
